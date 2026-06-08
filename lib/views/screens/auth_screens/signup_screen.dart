@@ -8,6 +8,7 @@ import '../../../../controllers/auth_controller.dart';
 import '../../../../controllers/dashboard_controller.dart';
 import '../../../../services/input_decoration.dart';
 import '../../../../services/theme.dart';
+import '../../../services/constants.dart';
 import '../../base/custom_widget.dart/common_button.dart';
 import '../../base/custom_widget.dart/custom_image.dart';
 import '../../base/custom_widget.dart/custom_toast.dart';
@@ -160,7 +161,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         };
                         authCtrl.registerUser(data: data).then((value) async {
                           if (value.isSuccess) {
-                            showCustomToast("Welcome to Raigadkar!");
+                            showCustomToast("Welcome to ${AppConstants.appName}!");
                             await authCtrl.getUserProfileData();
                             if (!context.mounted) return;
                             Get.find<DashBoardController>().setDashPage = 0;
