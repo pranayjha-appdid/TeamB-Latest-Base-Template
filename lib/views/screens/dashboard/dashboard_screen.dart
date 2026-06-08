@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:raigadkar/views/screens/dashboard/favourites_screen.dart';
+import 'package:raigadkar/views/screens/dashboard/home_screen/home_screen.dart';
+import 'package:raigadkar/views/screens/dashboard/more_screen.dart';
+import 'package:raigadkar/views/screens/dashboard/projects_screen.dart';
 
 import '../../../controllers/dashboard_controller.dart';
 import '../../../generated/assets.dart';
@@ -21,7 +25,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         builder: (DashBoardController controller) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-            child: [][controller.dashPage],
+            child: [HomeScreen() , ProjectsScreen() , FavouritesScreen() , MoreScreen() ][controller.dashPage],
           );
         },
       ),

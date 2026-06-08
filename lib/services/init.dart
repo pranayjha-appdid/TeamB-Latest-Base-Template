@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:get/instance_manager.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:raigadkar/controllers/basic_controller.dart';
+import 'package:raigadkar/controllers/dashboard_controller.dart';
 import 'package:raigadkar/controllers/notification_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -41,6 +42,7 @@ class Init {
       Get.lazyPut(() => AuthController(authRepo: Get.find()));
       Get.lazyPut(() => BasicController(basicRepo: Get.find()));
       Get.lazyPut(() => NotificationController());
+      Get.lazyPut(() => DashBoardController());
       Get.lazyPut(() => OTPAutofillController());
 
     } catch (e) {
