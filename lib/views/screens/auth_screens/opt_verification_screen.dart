@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:raigadkar/services/extensions.dart';
-import 'package:raigadkar/views/base/custom_widget.dart/custom_toast.dart';
-import 'package:raigadkar/views/screens/auth_screens/signup_screen.dart';
 import 'package:sms_autofill/sms_autofill.dart';
 
 import '../../../controllers/auth_controller.dart';
@@ -17,7 +15,9 @@ import '../../../services/route_helper.dart';
 import '../../../services/theme.dart';
 import '../../base/custom_widget.dart/common_button.dart';
 import '../../base/custom_widget.dart/custom_image.dart';
+import '../../base/custom_widget.dart/custom_toast.dart';
 import '../dashboard/dashboard_screen.dart';
+import 'signup_screen.dart';
 
 class OTPVerification extends StatefulWidget {
   final String phone;

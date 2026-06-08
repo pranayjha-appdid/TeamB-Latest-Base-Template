@@ -121,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   controller: emailController,
                   decoration: CustomDecoration.inputDecoration(
                     borderRadius: 12,
-                    icon: Icon(Icons.call_outlined, size: 18),
+                    icon: Icon(Icons.email_outlined, size: 18),
                     hint: 'Enter email address',
                     hintStyle: context.texttheme.titleSmall?.copyWith(color: Colors.grey, fontSize: 14),
                     borderColor: Colors.grey.shade300,

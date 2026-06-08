@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:raigadkar/views/screens/splash_screen/version_sync_service.dart';
-
 import '../../../controllers/auth_controller.dart';
 import '../../../controllers/basic_controller.dart';
 import '../../../services/constants.dart';
@@ -18,6 +16,7 @@ import '../auth_screens/login_screen.dart';
 import '../auth_screens/signup_screen.dart';
 import '../dashboard/dashboard_screen.dart';
 import '../onboarding_screens/onboaring_screen.dart';
+import 'version_sync_service.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
