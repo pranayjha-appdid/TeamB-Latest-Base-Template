@@ -2,8 +2,6 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:toastification/toastification.dart';
-
 import 'controllers/notification_controller.dart';
 import 'services/constants.dart';
 import 'services/init.dart';
@@ -50,15 +48,13 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return ToastificationWrapper(
-      child: MaterialApp(
-        title: AppConstants.appName,
-        navigatorKey: navigatorKey,
-        themeMode: ThemeMode.light,
-        theme: CustomTheme.light,
-        debugShowCheckedModeBanner: false,
-        home: const SplashScreen(),
-      ),
+    return MaterialApp(
+      title: AppConstants.appName,
+      navigatorKey: navigatorKey,
+      themeMode: ThemeMode.light,
+      theme: CustomTheme.light,
+      debugShowCheckedModeBanner: false,
+      home: const SplashScreen(),
     );
   }
 }
