@@ -6,8 +6,8 @@ import '../../../../services/theme.dart';
 import '../../../services/enums/bussiness_setting_enum.dart';
 import '../../base/custom_widget.dart/custom_html_screen.dart';
 
-class TearmAndConditionWidget extends StatelessWidget {
-  const TearmAndConditionWidget({super.key});
+class TermsAndConditionWidget extends StatelessWidget {
+  const TermsAndConditionWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
