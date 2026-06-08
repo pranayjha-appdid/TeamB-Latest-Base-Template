@@ -193,7 +193,7 @@ class _OTPVerificationState extends State<OTPVerification> {
           if (value.message == 'new') {
             navigatorKey.pushAndRemoveUntil(getCustomRoute(child: const SignUpScreen()), (route) => false);
           } else if (value.message == 'old') {
-            Get.find<DashBoardController>().dashPage = 0;
+            Get.find<DashBoardController>().setDashPage = 0;
             navigatorKey.pushAndRemoveUntil(getCustomRoute(child: const DashboardScreen()), (route) => false);
           }
         }

@@ -6,7 +6,7 @@ class DashBoardController extends GetxController implements GetxService {
 
   int get dashPage => _dashPage;
 
-  set dashPage(int page) {
+  set setDashPage(int page) {
     _dashPage = page;
     update();
   }

@@ -41,7 +41,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 children: [
                   BottomNavigationItemWidget(
                     onTap: () {
-                      controller.dashPage = 0;
+                      controller.setDashPage = 0;
                     },
                     title: 'Home',
                     icon: Assets.svgsHomeOutline,
@@ -49,7 +49,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                   BottomNavigationItemWidget(
                     onTap: () {
-                      controller.dashPage = 1;
+                      controller.setDashPage = 1;
                     },
                     title: 'Projects',
                     icon: Assets.svgsProjectsOutline,
@@ -57,7 +57,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                   BottomNavigationItemWidget(
                     onTap: () {
-                      controller.dashPage = 2;
+                      controller.setDashPage = 2;
                     },
                     title: 'Favorites',
                     icon: Assets.svgsHeartOutline,
@@ -65,7 +65,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                   BottomNavigationItemWidget(
                     onTap: () {
-                      controller.dashPage = 3;
+                      controller.setDashPage = 3;
                     },
                     title: 'More',
                     icon: Assets.svgsMoreOutline,
